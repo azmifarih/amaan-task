@@ -16,8 +16,8 @@ def findKth( arr, n, k):
 	
 	return -1
 
-T1 = [3, 5, 1, 4, 10]
-T2 = [1, 2, 7, 8, 9]	
+T1 = list(map(int, input("Type T1 with space: ").split()))
+T2 = list(map(int, input("Type T2 with space: ").split()))
 newarr = []
 
 for i in range(len(T1)):
@@ -56,6 +56,6 @@ for i in range(len(newarr)):
 		newT2.append(newarr[i])
 	else:
 		newT1.append(newarr[i])
-
-print("T1: "+ str(newT1))
-print("T2: "+ str(newT2))
+print("Result:")
+print("New T1: "+ str(newT1))
+print("New T2: "+ str(newT2))
